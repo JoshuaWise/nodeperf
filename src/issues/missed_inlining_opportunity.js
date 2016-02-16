@@ -36,7 +36,8 @@ MissedInliningOpportunity.prototype.toString = function MissedInliningOpportunit
     var mapped = reasonMap[this.reason];
 
     if (!mapped) {
-        throw new Error("unimplemented reason for not inlining "+ this.reason);
+        // throw new Error("unimplemented reason for not inlining "+ this.reason);
+        mapped = this.reason;
     }
     var maybeSmall = this.isShortCallee() ? "small " : "";
     var ret = "The " + maybeSmall + "function `" +this.calleeName + "` when called from the function `"+

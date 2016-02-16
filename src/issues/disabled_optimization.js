@@ -35,7 +35,8 @@ DisabledOptimization.prototype.toString = function DisabledOptimization$toString
     var mappedReason = reasonMap[this.reason];
 
     if (!mappedReason) {
-        throw new Error("Unimplemented reason " + this.reason + ".");
+        // throw new Error("Unimplemented reason " + this.reason + ".");
+        mappedReason = this.reason;
     }
 
     return "Function `"+ this.functionName + "` cannot be optimized because "+ mappedReason;
