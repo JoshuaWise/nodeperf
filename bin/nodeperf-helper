@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 var path = require('path');
 var packageJSON = require('../package.json');
-process.stdout.write(path.join('..', packageJSON.main));
+process.stdout.write(path.join(__dirname, '..', packageJSON.main));
