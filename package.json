@@ -1,6 +1,6 @@
 {
   "name": "nodeperf-profiler",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Node runtime performance analyser",
   "bin": {
     "nodeperf-helper": "./bin/nodeperf-helper",
