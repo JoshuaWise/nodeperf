@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-nodedebug ../src/run.js "$@"
+nodedebug "$(nodeperf-helper)" "$@"
